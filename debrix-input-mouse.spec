@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/drivers/*.{a,la,so,so.0}
+rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/drivers/*.{a,la}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -66,5 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/xorg/modules/drivers/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/xorg/modules/drivers/lib*.so*
 %{_mandir}/man3/*
