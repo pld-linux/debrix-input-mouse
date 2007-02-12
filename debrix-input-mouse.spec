@@ -6,7 +6,7 @@
 %define		snap 20040628
 #
 Summary:	debrix mouse driver
-Summary(pl.UTF-8):   Driver myszy dla debriksa
+Summary(pl.UTF-8):	Driver myszy dla debriksa
 Name:		debrix-input-mouse
 Version:	0.1.0
 Release:	0.1
